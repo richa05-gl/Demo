@@ -1,0 +1,110 @@
+h1{
+    text-align: center;
+    background-color: aqua;
+    height: 50px;
+}
+
+*{
+    box-sizing: border-box;
+  }
+/*
+.fixedContainer{
+    position:absolute;
+    top: 60px;
+    left:0px;
+    right:0px;
+    bottom:0px;
+    z-index:5;
+    overflow-y:auto;  
+}
+
+
+  .width-6 {
+    display: inline-block;
+    position: relative;
+    width: 50%;
+    float: left;
+  }
+table {
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+table { 
+  table-layout: auto;
+    width: 1000px;  
+border-collapse: collapse; }
+*/
+
+td {
+word-wrap: break-word;
+max-width: 1000px;
+}
+
+
+
+ table {  
+ border-spacing: 0 1em;
+ border: 1px solid black; }
+
+  .width-7{
+    float: right;
+    width: 60%;
+    font-size: 0.9em;
+    padding: 0.3em;
+    padding-left: 80px;
+  }  
+  
+  /* Control the left side */
+ 
+  /* If you want the content centered horizontally and vertically */
+  .centered {
+    position: absolute;
+    top: 30%;
+    left: 70%;
+    text-align: right;
+  }
+
+  .myForm {
+      overscroll-behavior-y: auto;
+  }
+  .myForm input[type="radio"] {
+      
+}
+
+  .myForm label {
+    padding: 0;
+    font-weight: bold;
+    padding: 2px 1em 0 0;
+    }
+    
+    .myForm label.choice {
+    font-size: 0.9em;
+    font-weight: normal;
+    }
+    
+    .radio{
+	  cursor: pointer;
+	  color:blue;
+	  font-weight: bold;
+  }
+
+/*
+.radio {
+	  border: 5px solid lightblue;
+	  background: lightblue;
+	  cursor: pointer;
+	  display: block;
+	  height: 40px;
+	  width: 200px;
+	  text-align: center;
+	  
+  }
+
+
+
+*/
+
+	

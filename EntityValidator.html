@@ -1,0 +1,175 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML JavaScript output on same page</title>
+    <script type="text/JavaScript" src="EntityValidator.js">  </script>
+    <link rel="stylesheet" href="EntityValidator.css">    
+    <link href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" rel="stylesheet">
+	
+</head>
+
+<body onload="displayEntity();">
+    <h1>Entity Validator</h1>
+   <div class="fixedContainer">
+            <div class=".width-6">
+            <form class="myForm" target="top">
+                <table id="tableEntity">
+                    <tbody><tr>
+                        <td>
+                         <label for="rooms">Rooms:</label>
+                            <label class="choice">  <input type="radio" name="rooms" id="rooms_1" value="gt20"><span id="gt20_label"> &gt;=20</span></label>
+                            <label class="choice">  <input type="radio" name="rooms" id="rooms_2" value="lt20"><span id="lt20_label"> &lt;=20</span></label>
+                            <label class="choice">  <input type="radio" name="rooms" id="rooms_3" value="lt05"><span id="lt05_label"> &lt;05</span></label>
+                        </td>
+                    </tr>
+                     <tr>
+                                <td>
+                                    <label for="public_loadging">Public Lodging:</label>
+                                    <label class="choice">  <input type="radio" name="public_loadging" id="public_loadging_1" value="publicLodgY"><span id="publicLodgY_label"> Yes</span></label>
+                                    <label class="choice">  <input type="radio" name="public_loadging" id="public_loadging_2" value="publicodgN"><span id="publicodgN_label"> No</span></label>
+                                </td>
+                            </tr>
+                               <tr>
+                                <td>
+                                    <label for="multipurpose">Multipurpose establishment with lodging feature:</label>
+                                    <label class="choice">  <input type="radio" name="multipurpose" id="multipurpose_1" value="multipurposeY"><span id="multipurposeY_label"> Yes</span></label>
+                                    <label class="choice">  <input type="radio" name="multipurpose" id="multipurpose_2" value="multipurposeN"><span id="multipurposeN_label"> No</span></label>
+                                </td>
+                            </tr>
+                    <tr>
+                            <td>
+                                <label for="parking">Parking:</label>
+                                <label class="choice">  <input type="radio" name="parking" id="parking_1" value="parkingY"><span id="parkingY_label"> Yes(Private entrance)</span></label>
+                                <label class="choice">  <input type="radio" name="parking" id="parking_2" value="parkingN"><span id="parkingN_label"> No</span></label>
+                            </td>
+                        </tr>
+                        <tr>
+                                <td>
+                                    <label for="packages_loadging">Packages Lodging:</label>
+                                    <label class="choice">  <input type="radio" name="packages_loadging" id="packages_loadging_1" value="packLodgY"><span id="packLodgY_label"> Yes</span></label>
+                                    <label class="choice">  <input type="radio" name="packages_loadging" id="packages_loadging_2" value="packLodgN"><span id="packLodgN_label"> No</span></label>
+                                </td>
+                            </tr>
+                            <tr>
+                                    <td>
+                                        <label for="public_restaurant">Public Restaurant:</label>
+                                        <label class="choice">  <input type="radio" name="public_restaurant" id="public_restaurant_1" value="restaurantY"><span id="restaurantY_label"> Yes</span></label>
+                                        <label class="choice">  <input type="radio" name="public_restaurant" id="public_restaurant_2" value="restaurantN"><span id="restaurantN_label"> No</span></label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                        <td>
+                                            <label for="type_of_traveller">Type of traveller:</label>
+                                            <label class="choice"><input type="radio" name="type_of_traveller" id="type_of_traveller_1" value="religious"><span id="religious_label"> Hindu, Jain,Tibetan,Buddhist Devotee </span></label>
+                                            <label class="choice"><input type="radio" name="type_of_traveller" id="type_of_traveller_2" value="adults"><span id="adults_label">Adults Only </span></label>
+                                            <label class="choice">  <input type="radio" name="type_of_traveller" id="type_of_traveller_3" value="anyTraveller"><span id="anyTraveller_label">Any</span></label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                            <td>
+                                                <label for="amenities">Amenities:</label>
+                                                <label class="choice"><input type="checkbox" name="amenities" id="amenities_1" value="farming"><span id="farming_label">Farming activity </span></label>
+                                                <label class="choice"><input type="checkbox" name="amenities" id="amenities_2" value="sharingFacility"><span id="sharingFacility_label">Shares the facility with Other travellers </span></label>
+                                                <label class="choice">  <input type="checkbox" name="amenities" id="amenities_3" value="prvEntry"><span id="prvEntry_label">Private Entrance with front parking </span></label>
+                                                <label class="choice">  <input type="checkbox" name="amenities" id="amenities_4" value="prvKitchen"><span id="prvKitchen_label">Private Sink/Kitchen </span></label>
+                                                <label class="choice">  <input type="checkbox" name="amenities" id="amenities_5" value="largeSpace"><span id="golfCourse_label">Golf Course</span></label>
+                                                <label class="choice">  <input type="checkbox" name="amenities" id="amenities_6" value="largeSpace"><span id="skiMountain_label">Ski mountain</span></label>
+                                                <label class="choice">  <input type="checkbox" name="amenities" id="amenities_7" value="largeSpace"><span id="waterPark_label">Water park</span></label>
+                                                <label class="choice">  <input type="checkbox" name="amenities" id="amenities_8" value="largeSpace"><span id="beach_label">Beach</span></label>
+                                                <label class="choice">  <input type="checkbox" name="amenities" id="amenities_9" value="largeSpace"><span id="themePark_label">Theme park</span></label>
+                                                <label class="choice">  <input type="checkbox" name="amenities" id="amenities_10" value="largeSpace"><span id="huntingPreserve_label">Hunting preserve</span></label>
+                                                <label class="choice">  <input type="checkbox" name="amenities" id="amenities_11" value="largeSpace"><span id="fishing_label">Fishing activity or water sports </span></label>
+                                                <label class="choice">  <input type="checkbox" name="amenities" id="amenities_12" value="roomService"><span id="roomService_label">RoomService</span></label>
+                                                <label class="choice">  <input type="checkbox" name="amenities" id="amenities_13" value="frontDesk"><span id="frontDesk_label">FrontDesk</span></label>
+                                                <label class="choice">  <input type="checkbox" name="amenities" id="amenities_14" value="anyAmenity"><span id="anyAmenity_label">Any</span></label>
+                                            </td>
+                                        </tr>
+                                        
+                                         <tr>
+                                            <td>
+                                                <label for="area">Area:</label>
+                                                <label class="choice"><input type="radio" name="area" id="area_1" value="gt500"><span id="gt500_label">&gt;500SqFt</span></label>
+                                                 <label class="choice"><input type="radio" name="area" id="area_1" value="eq500"><span id="eq500_label">&equiv;500SqFt</span></label>
+                                                  <label class="choice"><input type="radio" name="area" id="area_1" value="lt500"><span id="lt500_label">&lt;500SqFt</span></label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                                <td>
+                                                    <label for="f_d">Food &amp; Drink Accessbility:</label>
+                                                    <label class="choice"><input type="radio" name="f_d" id="fd_1" value="onSiteFood"><span id="onSiteFood_label">OnSite</span></label>
+                                                    <label class="choice"><input type="radio" name="f_d" id="fd_2" value="offSiteFood"><span id="offSiteFood_label">OffSite</span></label>
+                                                    <label class="choice">  <input type="radio" name="f_d" id="fd_3" value="homeMadeFood"><span id="homeMadeFood_label">HomeMade</span></label>
+                                                  
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                    <td>
+                                                        <label for="booking_duration">Booking Duration:</label>
+                                                        <label class="choice"><input type="radio" name="booking_duration" id="bookingDuration_1" value="minOneNight"><span id="minOneNight_label">Single Night Stay</span></label>
+                                                        <label class="choice"><input type="radio" name="booking_duration" id="bookingDuration_2" value="chargedHourly"><span id="chargedHourly_label">Charged Hourly </span></label>
+                                                        <label class="choice">  <input type="radio" name="booking_duration" id="bookingDuration_3" value="anyDuration"><span id="anyDuration_label">Any </span></label>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>
+                                                            <label for="membership">Membership:</label>
+                                                            <label class="choice"><input type="radio" name="membership" id="membership_1" value="membershipY"><span id="membershipY_label">Yes </span></label>
+                                                            <label class="choice"><input type="radio" name="membership" id="membership_2" value="membershipN"><span id="membershipN_label">No </span></label>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                            <td>
+                                                                <label for="sharing">Sharing:</label>
+                                                                <label class="choice"><input type="radio" name="sharing" id="sharing_1" value="sharingY"><span id="sharingY_label">Yes </span></label>
+                                                                <label class="choice"><input type="radio" name="sharing" id="sharing_2" value="sharingN"><span id="sharingN_label">No </span></label>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                                <td>
+                                                                    <label for="roomType">RoomType:</label>
+                                                                    <label class="choice"><input type="checkbox" name="roomType" id="roomType_1" value="dormitory"><span id="dormitory_label">Dormitory </span></label>
+                                                                    <label class="choice"><input type="checkbox" name="roomType" id="roomType_2" value="capRoom"><span id="capRoom_label">Capsule Room,Pod Hotel</span></label>
+                                                                    <label class="choice"><input type="checkbox" name="roomType" id="roomType_3" value="villa"><span id="villa_label">Villa</span></label>
+                                                                    <label class="choice"><input type="checkbox" name="roomType" id="roomType_4" value="bunglow"><span id="bunglow_label">Bunglow</span></label>
+                                                                    <label class="choice"><input type="checkbox" name="roomType" id="roomType_5" value="cabins"><span id="cabins_label">Cabins</span></label>
+                                                                    <label class="choice"><input type="checkbox" name="roomType" id="roomType_6" value="japaneseRoom"><span id="japaneseRoom_label">Japanese-styled room</span></label>
+                                                                    <label class="choice"><input type="checkbox" name="roomType" id="roomType_7" value="mobileHome"><span id="mobileHome_label">Mobile Homes</span></label>
+                                                                    <label class="choice"><input type="checkbox" name="roomType" id="roomType_8" value="anyRoomType"><span id="anyRoomType_label">Any</span></label>
+                                                                    
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                    <td>
+                                                                        <label for="cc_plumbing">Climate Control/ Plumbing:</label>
+                                                                        <label class="choice"><input type="radio" name="cc_plumbing" id="cc_plumbing_1" value="plumbingY"><span id="plumbingY_label"> Yes</span></label>
+                                                                        <label class="choice"><input type="radio" name="cc_plumbing" id="cc_plumbing_2" value="plumbingN"><span id="plumbingN_label"> No</span></label>
+                                                                    </td>
+                                                                </tr>
+                                                                  <tr>
+                                                                    <td>
+                                                                        <label for="uni_hostel">University Hostel:<i class="fa fa-info-circle" title="Those establishment which provide lodging only for specific university student"></i></label>
+                                                                        <label class="choice"><input type="radio" name="uni_hostel" id="uni_hostel_1" value="student"><span id="student_label"> Student</span></label>
+                                                                        <label class="choice"><input type="radio" name="uni_hostel" id="uni_hostel_2" value="notStudent"><span id="notStudent_label"> No</span></label>
+                                                                    </td>
+                                                                </tr>
+                </tbody></table>
+                <button type="button" onclick="validateEntity()" value="submit">Submit</button>
+
+            </form>
+        </div>
+        </div>
+    <div class=".width-7" >
+        <div class="centered" id="entityResult">
+                Output is :
+            <p id="output">
+               
+            </p>
+            <select id="dd1"></select>
+
+        </div>
+    </div>
+
+
+</body>
+</html>
